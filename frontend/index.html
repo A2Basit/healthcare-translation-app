@@ -458,7 +458,7 @@
             const sourceLang = document.getElementById("inputLang").value;
             const targetLang = document.getElementById("outputLang").value;
             
-            fetch("http://127.0.0.1:5000/translate", {
+            fetch("healthcare-translation-1de3m3mah.vercel.app/translate", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ text: speechText, source_lang: sourceLang, target_lang: targetLang })
